@@ -6,7 +6,7 @@ final class ProductionScreens: XCTestCase {
         app.launchArguments = ["--ui-smoke", "-AppleLanguages", "(en)"]
         app.launch()
         app.declineConsent()
-        for (route,title) in [("transcriptions","Transcriptions"),("handoff","Project handoff and backup"),("design","Voice design"),("stories","Stories"),("audiobook","Audiobook"),("batch","Batch dubbing"),("gallery","Gallery"),("workflows","Workflows"),("calls","Calls"),("local-api","Phone speech API"),("tools","Tools")] {
+        for (route,title) in [("transcriptions","Transcriptions"),("handoff","Project handoff and backup"),("design","Voice design"),("stories","Stories"),("audiobook","Audiobook"),("batch","Batch dubbing"),("gallery","Gallery"),("workflows","Workflows"),("calls","Calls"),("local-api","Phone speech API"),("tools","Tools"),("game","Pitch game")] {
             // Home's cards sit in a LazyVGrid: a card below the rendered rows is not in
             // the accessibility hierarchy until the grid scrolls to it, so waiting for it
             // without scrolling can never succeed. reveal() scrolls until it is on screen.

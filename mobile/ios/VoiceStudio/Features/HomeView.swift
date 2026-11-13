@@ -59,6 +59,7 @@ struct HomeView: View {
                     destination("calls", title: "calls.title", detail: "mobile.calls.hint", icon: "phone") { CallsView() }
                     destination("local-api", title: "mobile.host.title", detail: "mobile.host.hint", icon: "network") { LocalAPIView() }
                     destination("tools", title: "tools.title", detail: "compare.title", icon: "slider.horizontal.3") { VoiceToolsView() }
+                    destination("game", title: "mobile.game.title", detail: "mobile.game.hint", icon: "music.note") { PitchGameView() }
                 }
                 section("projects.generated_audio") {
                     if model.phone.recent.isEmpty && model.history.isEmpty { empty("mobile.speak.empty_recent") }

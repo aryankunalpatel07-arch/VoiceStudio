@@ -568,6 +568,18 @@ Workflows on both platforms. These are native screens; no embedded desktop UI.
 - **System integration** accepts shared text/audio/video into a review screen.
   Widgets/shortcuts open workspaces without automatic inference or microphone
   access. Voice-design recipes can be restored into their editor.
+- **Pitch game** (Home → Pitch game, route `game`) is an ear-training game that
+  needs no model, host, network or microphone. Each round plays two sine tones
+  (0.45 s each, 0.2 s apart, 10 ms fades, 44.1 kHz mono PCM16, half amplitude);
+  the player answers Higher or Lower for the second tone, and Hear again replays
+  the round. The first tone is `220 × 2^r` Hz and the second lies
+  `max(10, 400 × 0.85^score)` cents above or below it (up when the second draw
+  is ≥ 0.5). A right answer adds a point; a miss costs one of three lives and
+  keeps the gap; every answer draws a new round, and no lives left ends the game.
+  Score, best score, lives and the current gap are shown as text, results are
+  announced to screen readers, and tones stop when the screen closes. Only the
+  best score is stored, on the phone. Both apps share `PitchGame` and run the
+  same test vectors (`PitchGameTest.kt`, `PitchGameTests.swift`).
 
 Generated speech in every workspace uses the existing synthetic-audio marking
 chokepoint. Report reuses the existing `speak` task; mixed-model books report

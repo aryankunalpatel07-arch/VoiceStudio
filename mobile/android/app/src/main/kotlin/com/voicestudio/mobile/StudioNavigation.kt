@@ -36,6 +36,7 @@ internal fun isWorkspace(route:String)=route in tabs
         route=="calls" -> "calls.title"
         route=="local-api" -> "mobile.host.title"
         route=="tools" -> "tools.title"
+        route=="game" -> "mobile.game.title"
         route=="incoming" -> "mobile.integration.received"
         route.startsWith("preset/") -> "mobile.tabs.speak"
         route=="models" -> "mobile.local.models"

@@ -1,0 +1,22 @@
+{
+  "mobile": {
+    "game": {
+      "title": "Pitch game",
+      "hint": "Train your ear: which tone is higher?",
+      "intro": "You'll hear two tones. Choose whether the second is higher or lower than the first. The gap shrinks with every right answer, and three misses end the game.",
+      "start": "Start game",
+      "play_again": "Play again",
+      "replay": "Hear again",
+      "higher": "Higher",
+      "lower": "Lower",
+      "score": "Score: {{score}}",
+      "best": "Best: {{score}}",
+      "lives": "Lives left: {{count}}",
+      "gap": "Gap: {{cents}} cents",
+      "correct": "Correct",
+      "wrong": "Not quite",
+      "over": "Game over",
+      "new_best": "New best score"
+    }
+  }
+}
