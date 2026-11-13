@@ -156,6 +156,9 @@ Supermetry and Spicrawl with explicit sponsor credits and individual links.
 - **System integration**: share text/audio/video into a review screen, then
   explicitly run a task. Home widgets and shortcuts open Speak or Dictate without
   starting recording or inference. Saved voice-design recipes reopen for editing.
+- **Pitch game**: an ear-training game on Home. Hear two tones and choose
+  whether the second is higher or lower; the gap narrows with every right answer
+  and three misses end the game. It needs no models, computer or network.
 
 Production workspaces are available from **Home** on both iOS and Android.
 Install models in Models first. Voice Design uses OmniVoice. Saved-voice speech

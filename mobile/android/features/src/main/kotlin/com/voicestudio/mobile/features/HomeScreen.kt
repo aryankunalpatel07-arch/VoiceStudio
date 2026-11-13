@@ -48,6 +48,7 @@ private val destinations = listOf(
     HomeDestination("calls", "calls.title", "mobile.calls.hint", Icons.Default.Call),
     HomeDestination("local-api", "mobile.host.title", "mobile.host.hint", Icons.Default.Settings),
     HomeDestination("tools", "tools.title", "compare.title", Icons.Default.Settings),
+    HomeDestination("game", "mobile.game.title", "mobile.game.hint", Icons.Default.Star),
 )
 
 @Composable fun HomeScreen(vm: StudioViewModel, navigate: (String)->Unit) {
